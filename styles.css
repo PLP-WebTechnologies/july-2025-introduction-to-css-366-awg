@@ -1,0 +1,156 @@
+/* === BASE STYLES === */
+/* Reset and universal box-sizing for all elements */
+* {
+    box-sizing: border-box; /* Include padding & border in element's total width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Text color */
+    background-color: #f8f9fa; /* Page background */
+    padding: 20px; /* Outer space around all content */
+}
+
+/* === HEADER STYLES === */
+header {
+    background-color: #4a6fa5;
+    padding: 30px; /* Inner spacing inside header */
+    margin-bottom: 30px; /* Space below header */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft drop shadow */
+}
+
+/* Main heading */
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* === NAVIGATION STYLES === */
+nav ul {
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center items */
+    list-style: none; /* Remove bullets */
+}
+
+nav li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Clickable area */
+    border: 2px solid transparent; /* Keeps size consistent on hover */
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-color: #fff;
+}
+
+/* === MAIN CONTENT / CARD STYLES === */
+main {
+    display: grid; /* Responsive grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; /* Space between cards */
+    margin-bottom: 30px;
+}
+
+/* Card container styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px; /* Inner space (Box Model: padding) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Card headings */
+h2 {
+    color: #4a6fa5;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eaeaea; /* Box Model: border */
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 15px;
+}
+
+/* === BUTTON STYLES === */
+.learn-btn {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Button size */
+    margin-top: 10px; /* Space above button */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.learn-btn:hover {
+    background-color: #3a5a80;
+}
+
+/* === MARGIN DEMO SECTION === */
+.margin-demo {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.box {
+    padding: 20px; /* Inner space */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: #e74c3c;
+    margin-bottom: 40px; /* Demonstrates margin-bottom */
+}
+
+.box2 {
+    background-color: #3498db;
+    margin-top: 30px; /* Demonstrates margin-top */
+}
+
+/* === FOOTER STYLES === */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px; /* Inner spacing */
+    border-radius: 8px;
+}
+
+/* === UTILITY CLASSES === */
+code {
+    background-color: #f0f4f8;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+

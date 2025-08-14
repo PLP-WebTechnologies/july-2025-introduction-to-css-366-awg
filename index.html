@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demo</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER: Uses padding, margin, border-radius, and box-shadow -->
+    <header>
+        <h1>Understanding the CSS Box Model</h1>
+        <!-- Navigation: margin between items, padding inside links -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN: Cards show padding, margin, borders -->
+    <main>
+        <!-- Card 1: Explains box model components -->
+        <section class="card">
+            <h2>Box Model Components</h2>
+            <p>Every element is a rectangular box with:</p>
+            <ol>
+                <li>Content (text/images)</li>
+                <li>Padding (inner space)</li>
+                <li>Border (frame around element)</li>
+                <li>Margin (outer space)</li>
+            </ol>
+            <!-- Button: padding, margin, background color -->
+            <button class="learn-btn">Visualize</button>
+        </section>
+
+        <!-- Card 2: Demonstrates margin collapsing -->
+        <section class="card">
+            <h2>Margin Collapsing</h2>
+            <p>Vertical margins between adjacent elements collapse into the larger margin value.</p>
+            <!-- Margin demo: Box 1 and Box 2 have different margins -->
+            <div class="margin-demo">
+                <div class="box box1">Box 1 (margin-bottom: 40px)</div>
+                <div class="box box2">Box 2 (margin-top: 30px)</div>
+            </div>
+        </section>
+
+        <!-- Card 3: Shows box-sizing property -->
+        <section class="card">
+            <h2>Box-Sizing Property</h2>
+            <p>Default: <code>box-sizing: content-box;</code> (border/padding add to width)</p>
+            <p>Better practice: <code>box-sizing: border-box;</code> (border/padding included in width)</p>
+            <button class="learn-btn">Try It</button>
+        </section>
+    </main>
+
+    <!-- FOOTER: padding, background color, text alignment -->
+    <footer>
+        <p>&copy; 2025 CSS Box Model Demo | Learn web development</p>
+    </footer>
+</body>
+</html>
